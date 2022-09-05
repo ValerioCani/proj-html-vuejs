@@ -1,12 +1,20 @@
 <template>
-  <main>
-    <div class="container"></div>
-  </main>
+    <main>
+        <CoursesSection/>
+        <BookSection/>
+    </main>
 </template>
 
 <script>
+import CoursesSection from './CoursesSection.vue'
+import BookSection from './BookSection.vue'
+
 export default {
-    name:'MasterMain'
+    name:'MasterMain',
+    components: {
+        CoursesSection,
+        BookSection,
+    },
 }
 </script>
 

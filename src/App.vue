@@ -16,7 +16,7 @@ export default {
   components: {
     MasterHeader,
     MasterMain,
-    MasterFooter
+    MasterFooter,
   }
 }
 </script>
