@@ -3,7 +3,7 @@
         <h2>{{title}}</h2>
         <div class="card_cont">
             <div class="single_card" v-for="(card, index) in CardData" :key="index">
-                <AdvertCard/>
+                <AdvertCard :data="card" />
             </div>
         </div>
     </div>
@@ -48,5 +48,13 @@ export default {
 </script>
 
 <style scoped lang="scss">
-    
+.card_cont{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    .single_card{
+        width:calc((100% / 2) - 20px);
+        margin: 10px;
+    }
+}   
 </style>

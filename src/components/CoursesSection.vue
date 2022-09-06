@@ -30,6 +30,7 @@ export default {
                     difficulty:'Advanced',
                     lectures:8,
                     time:'6 hours',
+                    special: true,
                 },
                 {
                     img:'UnrealEngine4.png',
@@ -38,6 +39,7 @@ export default {
                     difficulty:'Advanced',
                     lectures:8,
                     time:'6 hours',
+                    special: true,
                 },
                 {
                     img:'FashionPhotographyCourse.jpeg',
@@ -46,6 +48,7 @@ export default {
                     difficulty:'Advanced',
                     lectures:6,
                     time:'6 hours',
+                    special: true,
                 },
                 {
                     img:'DesignCommunication.jpeg',
@@ -54,6 +57,7 @@ export default {
                     difficulty:'Intermediate',
                     lectures:6,
                     time:'6 hours',
+                    special: false,
                 },
                 {
                     img:'Concept.jpg',
@@ -62,6 +66,7 @@ export default {
                     difficulty:'Intermediate',
                     lectures:6,
                     time:'6 hours',
+                    special: false,
                 },
                 {
                     img:'CyclingCourse.jpeg',
@@ -70,10 +75,9 @@ export default {
                     difficulty:'Beginner',
                     lectures:6,
                     time:'6 hours',
+                    special: false,
                 },
             ]
-           
-
         }
     }
 }
