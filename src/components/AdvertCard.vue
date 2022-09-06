@@ -1,6 +1,6 @@
 <template>
     <div class="card">
-        <!-- <img :src="require('@/assets/img/'+ data.img)" :alt="data.headline"> -->
+        <div><i :class="data.img"></i></div>
         <div>
             <h2>{{data.headline}}</h2>
             <p>{{data.text}}</p>
@@ -20,5 +20,8 @@ export default {
 <style scoped lang="scss">
 .card{
     border-left: solid 5px #f2b91e;
+    i{
+        color: #f2b91e;
+    }
 }
 </style>

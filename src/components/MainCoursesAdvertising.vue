@@ -22,22 +22,22 @@ export default {
             title:'Why my Courses?',
             CardData:[
                 {
-                    img:'',
+                    img:'fa-solid fa-briefcase fa-3x',
                     headline:'Entrepreneuership',
                     text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
                 },
                 {
-                    img:'',
+                    img:'fa-solid fa-rocket fa-3x',
                     headline:'Accelereted learning',
                     text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
                 },
                 {
-                    img:'',
+                    img:'fa-regular fa-thumbs-up fa-3x',
                     headline:'Productivity',
                     text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
                 },
                 {
-                    img:'',
+                    img:'fa-solid fa-gear fa-3x',
                     headline:'Life Coaching',
                     text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
                 },

@@ -1,22 +1,22 @@
 <template>
   <div id="app">
-    <MasterHeader/>
-    <MasterMain/>
-    <MasterFooter/>
+    <HeaderMaster/>
+    <MainMaster/>
+    <FooterMaster/>
   </div>
 </template>
 
 <script>
-import MasterHeader from './components/MasterHeader.vue'
-import MasterMain from './components/MasterMain.vue'
-import MasterFooter from './components/MasterFooter.vue'
+import HeaderMaster from './components/HeaderMaster.vue'
+import MainMaster from './components/MainMaster.vue'
+import FooterMaster from './components/FooterMaster.vue'
 
 export default {
   name: 'App',
   components: {
-    MasterHeader,
-    MasterMain,
-    MasterFooter,
+    HeaderMaster,
+    MainMaster,
+    FooterMaster,
   }
 }
 </script>
