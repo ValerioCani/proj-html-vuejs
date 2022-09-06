@@ -28,9 +28,12 @@ export default {
         width:100%;
         img{
         width: 100%;
+        vertical-align: top;
         }
         .datasection{
             padding: 20px;
+            background-color: white;
+            text-align: center;
             .divider{
                 border: solid grey 1px;
                 margin: 10px;

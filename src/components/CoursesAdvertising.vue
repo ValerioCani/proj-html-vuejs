@@ -1,0 +1,52 @@
+<template>
+    <div class="container">
+        <h2>{{title}}</h2>
+        <div class="card_cont">
+            <div class="single_card" v-for="(card, index) in CardData" :key="index">
+                <AdvertCard/>
+            </div>
+        </div>
+    </div>
+</template>
+
+<script>
+import AdvertCard from './AdvertCard.vue'
+
+export default {
+    name:'CoursesAdvertising',
+    components:{
+        AdvertCard,
+    },
+    data(){
+        return{
+            title:'Why my Courses?',
+            CardData:[
+                {
+                    img:'',
+                    headline:'Entrepreneuership',
+                    text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
+                },
+                {
+                    img:'',
+                    headline:'Accelereted learning',
+                    text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
+                },
+                {
+                    img:'',
+                    headline:'Productivity',
+                    text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
+                },
+                {
+                    img:'',
+                    headline:'Life Coaching',
+                    text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
+                },
+            ]
+        }
+    }
+}
+</script>
+
+<style scoped lang="scss">
+    
+</style>
