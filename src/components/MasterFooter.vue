@@ -6,7 +6,23 @@
 
 <script>
 export default {
-    name:'MasterFooter'
+  name:'MasterFooter',
+  data(){
+    return{
+      About:{
+        headline:'ABOUT',
+        content:'Masterstudy is Educatio WordPres Theme Featured By Learning Management System (LMS) for online education. Developed by StylemixThemes.',
+        social:[
+          facebook,
+          twitter,
+          instagram
+        ]
+      },
+      Contact:{
+        headline:'CONTACT',
+      }
+    } 
+  }
 }
 </script>
 
