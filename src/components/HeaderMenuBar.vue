@@ -105,7 +105,7 @@ export default {
                         padding: 1px 3px;
                         border-radius: 3px 3px 3px 0;
                         color: white;
-                        background-color: red;
+                        background-color: $New_tag_navbar_color;
                     }
                     .triangle_up {
                         width: 0;   

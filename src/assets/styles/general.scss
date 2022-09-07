@@ -16,6 +16,10 @@
     display: flex;
 }
 
+.clear{
+    clear: both;
+}
+
 ul{
     list-style: none;
 }
@@ -36,6 +40,15 @@ a{
 .button{
     border: none;
     border-radius: 30px;
-    padding: 3%;
+    padding: 20px 25px;
     font-weight: 800;
+}
+
+.standard_section{
+    padding: 30px 0px;
+    h2{
+        text-align: center;
+        font-size: 52px;
+        padding-top: 45px;
+    }
 }

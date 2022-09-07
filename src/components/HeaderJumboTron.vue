@@ -67,7 +67,6 @@ export default {
                 }
             }
             #course_sale{
-                // width: 1310px;
                 height: 242px;
                 background-color: $primary_color;
                 border-radius: 10px;

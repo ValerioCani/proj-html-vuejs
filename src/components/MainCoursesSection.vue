@@ -1,12 +1,12 @@
 <template>
     <section>
-        <div class="container">
+        <div class="container standard_section">
             <h2>{{title}}</h2>
             <div class="card_cont">
                 <div class="single_card" v-for="(card, index) in CardData" :key="index">
                     <CourseCard :data="card"/>
                 </div>
-                <button>LOAD MORE</button>
+                <button class="button course_button secondary_text">LOAD MORE</button>
             </div>
         </div>       
     </section>
@@ -87,15 +87,22 @@ export default {
 </script>
 
 <style scoped lang="scss">
+@import '@/assets/styles/var.scss';
 section{
     background-color: #edf2f5;
     .card_cont{
+        padding-top: 45px;
         width: 100%;
         display: flex;
         flex-wrap: wrap;
         .single_card{
-            width:calc((100% / 3) - 20px);
-            margin: 10px;
+            width:calc((100% / 3) - 30px);
+            margin: 15px;
+        }
+        .course_button{
+            background-color: $primary_color;
+            margin: 60px auto;
+            
         }
     }
 }
