@@ -5,7 +5,7 @@
             <div class="flex">
                 <ul class="flex">
                     <li v-for="link in headerMenu" :key="link.index" >
-                        <div class="new" v-if="link.new==true">New</div>
+                        <div class="new" v-if="link.new==true">NEW</div>
                         <h3><a :href="link.url">{{link.text}}</a></h3>
                         <div class="triangle_up"></div>
                     </li>
@@ -101,9 +101,9 @@ export default {
                         position:absolute;
                         bottom:32px;
                         right: -14px;
-                        font-size: 12px;
+                        font-size: 10px;
                         padding: 1px 3px;
-                        border-radius: 3px;
+                        border-radius: 3px 3px 3px 0;
                         color: white;
                         background-color: red;
                     }
