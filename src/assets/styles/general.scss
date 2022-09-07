@@ -32,3 +32,10 @@ a{
 .highlight_text{
     color: $highlight_text_color; 
 }
+
+.button{
+    border: none;
+    border-radius: 30px;
+    padding: 3%;
+    font-weight: 800;
+}
