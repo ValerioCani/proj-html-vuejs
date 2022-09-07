@@ -15,17 +15,17 @@
 
       <div class="footer_column">
           <h2>{{Pages.headline}}</h2>
-          <ul>
+          <ul class="flex">
             <li v-for="(page, index) in Pages.content" :key="index">{{page}}</li>
           </ul>
       </div>
 
       <div class="footer_column">
           <h2>{{Blog.headline}}</h2>
-          <div v-for="(article, index) in Blog.content" :key="index">
+          <div class="flex article_cont" v-for="(article, index) in Blog.content" :key="index">
             <img :src="require('@/assets/img/' + article.img)" alt="">
             <div>
-              <p>{{article.text}}</p>
+              <h3>{{article.text}}</h3>
               <span>{{article.date}}</span>
             </div>
           </div>
@@ -97,8 +97,39 @@ export default {
 @import '@/assets/styles/var.scss';
 footer{
   background-color: $primary_color;
+  padding: 40px 0;
   .footer_column{
-    
+    width: calc(100% / 4);
+    padding-right: 40px;
+    line-height: 25px;
+    font-size: 15px;
+    i{
+      font-size: 20px;
+      padding: 10px 20px 0 0;
+    }
+    h2{
+      padding: 30px 0;
+    }
+    ul{
+      list-style:initial;
+      flex-wrap: wrap;
+      li{
+        width: 50%;
+        padding-bottom: 10px;
+      }
+    }
+    .article_cont{
+      height: 75px;
+      margin-bottom: 20px;
+      img{
+        height: 100%;
+        margin-right: 15px;
+      }
+      h3{
+        font-size: 16px;
+        line-height: 18px;
+      }
+    }
   }
 }
 </style>
