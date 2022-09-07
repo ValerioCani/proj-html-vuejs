@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container">
+    <div class="container flex">
 
       <div class="footer_column">
           <h2>{{About.headline}}</h2>
@@ -94,5 +94,11 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+@import '@/assets/styles/var.scss';
+footer{
+  background-color: $primary_color;
+  .footer_column{
+    
+  }
+}
 </style>

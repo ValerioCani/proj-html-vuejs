@@ -4,7 +4,9 @@
             <div id="book_ads">
                 <h2 class="highlight_text">Get My Exclusive Investing Book just for $19.50</h2>
                 <p class="secondary_text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellendus vel aspernatur voluptatem minus obcaecati provident vero perspiciatis.</p>
-                <img src="@/assets/img/amazon.png" alt="ordina il libro su amazon">
+                <a href="#">
+                    <img src="@/assets/img/amazon.png" alt="ordina il libro su amazon">
+                </a>
             </div>
             <img src="@/assets/img/book.png" alt="ordina il libro su amazon">
         </div>

@@ -1,21 +1,19 @@
 <template>
-    <div class="container">
+    <div class="container standard_section">
         <h2>{{title}}</h2>
-        <div class="slider">
-            <div>
-                <i @click="NextReview()" class="fas fa-arrow-left"></i>
-                <div>
-                    <img class="profile_image side_image" :src="require('@/assets/img/' + reviewsList[nextProfile].img)" alt="">
-                    <img class="profile_image central_image" :src="require('@/assets/img/' + reviewsList[currentProfile].img)" alt="">
-                    <img class="profile_image side_image" :src="require('@/assets/img/' + reviewsList[prevProfile].img)" alt="">
-                </div>
-                <i @click="PrevReview()" class="fas fa-arrow-right"></i>
+        <div class="slider_cont">
+            <div class="slider flex">
+                <i @click="NextReview()" class="fas fa-arrow-left fa-2x"></i>
+            
+                <img class="profile_image side_image" :src="require('@/assets/img/' + reviewsList[nextProfile].img)" alt="">
+                <img class="profile_image central_image" :src="require('@/assets/img/' + reviewsList[currentProfile].img)" alt="">
+                <img class="profile_image side_image" :src="require('@/assets/img/' + reviewsList[prevProfile].img)" alt="">
+                
+                <i @click="PrevReview()" class="fas fa-arrow-right fa-2x"></i>
             </div>
             <div>
                 <h3>{{reviewsList[currentProfile].course}}</h3>
-                <i v-for="(n, index) in reviewsList[currentProfile].vote" :key="index" class="fas fa-star"></i>
-            </div>
-            <div>
+                <i v-for="(n, index) in reviewsList[currentProfile].vote" :key="index" class="fas fa-star highlight_text stars"></i>
                 <p>{{reviewsList[currentProfile].text}}</p>
             </div>
         </div>
@@ -38,7 +36,7 @@ export default {
                     img:'1-100x100.jpg',
                     course:'Design Instruments for Communication',
                     vote:3,
-                    text:'Poteva acndare meglio',
+                    text:'Poteva andare meglio',
                 },
                 {
                     img:'2-100x100.jpg',
@@ -103,5 +101,43 @@ export default {
 </script>
 
 <style scoped lang="scss">
-
+.container{
+    text-align: center;
+    .slider_cont{
+        height: 530px;
+        max-width: 760px;
+        margin: 0 auto;
+        .slider{
+            justify-content: center;
+            align-items: center;
+            padding: 40px 0 20px;
+            i{
+                padding: 0 140px;
+            }
+            .profile_image{
+                border-radius: 50%;
+                margin: 8px;
+            }
+            .side_image{
+                height: 70px;
+                width: 70px;
+            }
+            .central_image{
+                height: 100px;
+                width: 100px;
+            }
+        }
+        h3{
+            font-size: 20px;
+        }
+        .stars{
+            margin: 3px;
+        }
+        p{
+            padding: 40px 0;
+            line-height: 40px;
+            font-size: 18px;
+        }
+    }
+}
 </style>

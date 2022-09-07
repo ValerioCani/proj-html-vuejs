@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div class="container standard_section">
         <h2>{{title}}</h2>
         <div class="card_cont">
             <div class="single_card" v-for="(card, index) in CardData" :key="index">
@@ -28,7 +28,7 @@ export default {
                 },
                 {
                     img:'fa-solid fa-rocket fa-3x',
-                    headline:'Accelereted learning',
+                    headline:'Accelerated learning',
                     text:'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti itaque nisi eveniet facilis necessitatibus alias suscipit fugit magni dolore laudantium, quis quo ab iusto, similique facere! Molestiae magnam nihil ratione.',
                 },
                 {
@@ -52,9 +52,10 @@ export default {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 70px 0;
     .single_card{
-        width:calc((100% / 2) - 20px);
-        margin: 10px;
+        width:calc((100% / 2) - 30px);
+        margin: 15px;
     }
 }   
 </style>
